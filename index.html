@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monitoring Setor Soal UTS Gasal 2026/2027</title>
+<style>
+*{box-sizing:border-box} html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#061d2a;color:#fff}
+body{background:radial-gradient(circle at 90% 0%,rgba(20,184,166,.20),transparent 28%),linear-gradient(135deg,#061d2a,#073b4c 55%,#07566a);padding:24px}
+.header{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}
+h1{margin:0;font-size:clamp(24px,3vw,46px);line-height:1.05} .sub{margin-top:7px;color:#9fe9ef;font-weight:800;letter-spacing:1.2px}
+.summary{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.pill{padding:9px 13px;border-radius:12px;background:rgba(255,255,255,.1);font-weight:900;font-size:14px}
+.progress{height:12px;background:rgba(0,0,0,.3);border-radius:20px;overflow:hidden;margin-bottom:20px}
+#bar{height:100%;background:linear-gradient(90deg,#2dd4bf,#67e8f9);width:0}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.teacher-card{border:2px solid rgba(248,113,113,.65);background:rgba(127,29,29,.30);border-radius:18px;padding:15px;min-width:0}
+.teacher-card.partial{border-color:rgba(251,191,36,.75);background:rgba(120,53,15,.28)}
+.teacher-card.complete{border-color:rgba(74,222,128,.75);background:rgba(20,83,45,.34)}
+.teacher-name{font-size:clamp(15px,1.25vw,20px);font-weight:900;min-height:45px;border-bottom:1px solid rgba(255,255,255,.17);padding-bottom:9px;margin-bottom:9px}
+.items{display:grid;gap:6px}
+.item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 9px;border-radius:9px;font-size:clamp(12px,.9vw,15px);font-weight:700}
+.item b{font-size:.88em;color:#d9f5f6}
+.item.pending{background:rgba(239,68,68,.22);color:#fecaca}
+.item.done{background:rgba(34,197,94,.25);color:#bbf7d0}
+.dot{font-size:18px;font-weight:900}
+.teacher-foot{margin-top:10px;text-align:right;font-size:12px;font-weight:900;letter-spacing:.5px}
+.footer{margin-top:17px;display:flex;justify-content:space-between;gap:12px;color:#b9dfe5;font-size:13px}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){body{padding:14px}.header{display:block}.summary{justify-content:flex-start;margin-top:14px}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="header">
+ <div><h1>MONITORING SETOR SOAL</h1><div class="sub">UTS GASAL • TAHUN AJARAN 2026/2027</div></div>
+ <div class="summary"><div class="pill" id="total"></div><div class="pill" id="done"></div><div class="pill" id="pending"></div><div class="pill" id="percent"></div></div>
+</header>
+<div class="progress"><div id="bar"></div></div>
+<main class="grid">
+<article class="teacher-card" data-total="3" data-done="0">
+      <div class="teacher-name">Ust. Musyrofin, M.Pd.I.</div>
+      <div class="items"><div class="item pending"><span>Fiqih <b>Kelas 6</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Tauhid <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Tauhid <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="3" data-done="0">
+      <div class="teacher-name">Ust. Mohammad Amrulloh, S.Pd.I.</div>
+      <div class="items"><div class="item pending"><span>Adab/Akhlaq <b>Kelas 2</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Adab/Akhlaq <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Adab/Akhlaq <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="2" data-done="2">
+      <div class="teacher-name">Ust. Abdul Basith, S.Pd.I.</div>
+      <div class="items"><div class="item done"><span>Makna Qur'an <b>Kelas 4</b></span><span class="dot">✓</span></div>
+<div class="item done"><span>Makna Qur'an <b>Kelas 6</b></span><span class="dot">✓</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="6" data-done="0">
+      <div class="teacher-name">Ust. Ilayasa Hadi, M.Pd.</div>
+      <div class="items"><div class="item pending"><span>BTL <b>Kelas 1</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>BTL <b>Kelas 2</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Bhs. Indonesia <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Bhs. Indonesia <b>Kelas 6</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Social <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Social <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="4" data-done="0">
+      <div class="teacher-name">Ust. Ihyaul Haqiqi, S.E.</div>
+      <div class="items"><div class="item pending"><span>Sirah Nabawiyah <b>Kelas 2</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Matan Hadits <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Matan Hadits <b>Kelas 6</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>BTA <b>Kelas 2</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="4" data-done="0">
+      <div class="teacher-name">Ust. Muhammad Zainuri, S.Pd.I.</div>
+      <div class="items"><div class="item pending"><span>Bahasa Arab <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Bahasa Arab <b>Kelas 6</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Nahwu Shorof <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Nahwu Shorof <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="3" data-done="0">
+      <div class="teacher-name">Ust. Nuril Hafidz Fatih Al Farisy, S.Pd.</div>
+      <div class="items"><div class="item pending"><span>Matematika <b>Kelas 2</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Matematika <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Matematika <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="3" data-done="0">
+      <div class="teacher-name">Ust. Sufa'at, S.Pd.I.</div>
+      <div class="items"><div class="item pending"><span>Fiqih <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Sirah Nabawiyah <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Sirah Nabawiyah <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="1" data-done="0">
+      <div class="teacher-name">Ust. Ali Mahadir, S.Pd.I.</div>
+      <div class="items"><div class="item pending"><span>Tauhid/Aqidah <b>Kelas 2</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="2" data-done="0">
+      <div class="teacher-name">Ust. H. Kukuh Dwi Prasetyo, S.Si.</div>
+      <div class="items"><div class="item pending"><span>Sains <b>Kelas 4</b></span><span class="dot">•</span></div>
+<div class="item pending"><span>Sains <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="1" data-done="0">
+      <div class="teacher-name">Ust. Mujtahidur Rohman, S.Pd.</div>
+      <div class="items"><div class="item pending"><span>Bahasa Inggris <b>Kelas 6</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article><article class="teacher-card" data-total="1" data-done="0">
+      <div class="teacher-name">Ust. Andi Purnomo, S.S.</div>
+      <div class="items"><div class="item pending"><span>Bahasa Inggris <b>Kelas 4</b></span><span class="dot">•</span></div></div>
+      <div class="teacher-foot"></div>
+    </article>
+</main>
+<footer class="footer"><span>🟢 Sudah setor &nbsp; 🔴 Belum setor</span><span>Pembaruan data oleh Panitia UTS</span></footer>
+<script>
+(function(){
+ let total=0, done=0;
+ document.querySelectorAll('.teacher-card').forEach(card=>{
+   const t=Number(card.dataset.total), d=Number(card.dataset.done);
+   total+=t; done+=d;
+   if(d===t) card.classList.add('complete');
+   else if(d>0) card.classList.add('partial');
+   card.querySelector('.teacher-foot').textContent=d+' / '+t+' SOAL TERKUMPUL';
+ });
+ const pending=total-done, pct=total?Math.round(done/total*100):0;
+ document.getElementById('total').textContent='TOTAL '+total;
+ document.getElementById('done').textContent='🟢 SUDAH '+done;
+ document.getElementById('pending').textContent='🔴 BELUM '+pending;
+ document.getElementById('percent').textContent=pct+'% SELESAI';
+ document.getElementById('bar').style.width=pct+'%';
+})();
+</script>
+</body></html>
